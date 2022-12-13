@@ -16,8 +16,11 @@
                         <td>{{student.cin}}</td>
                         <td>{{student.gender}}</td>
                         <td>{{student.classy?.nomClass}}</td>
-                        <td><a class="btn btn-danger" (click)="supprimerStudent(student)">Supprimer</a></td>
-                        <td><a class="btn btn-success" [routerLink]="['/updateStudent',student.idStudent]">Modifer</a></td>
+                        <td><a *ngIf="authService.isAdmin()" class="btn btn-danger"
+                                (click)="supprimerStudent(student)">Supprimer</a></td>
+                        <td><a *ngIf="authService.isAdmin()"
+                            class="btn btn-success" [routerLink]="['/updateStudent',student.idStudent]">Modifer</a>
+                        </td>
 
 
                     </tr>

@@ -14,6 +14,8 @@ import { SearchFilterPipe } from './search-filter.pipe';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import { ListeClassysComponent } from './liste-classys/liste-classys.component';
 import { UpdateClassyComponent } from './update-classy/update-classy.component';
+import { LoginComponent } from './login/login.component';
+import { ForbiddenComponent } from './forbidden/forbidden.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { UpdateClassyComponent } from './update-classy/update-classy.component';
     SearchFilterPipe,
     ListeClassysComponent,
     UpdateClassyComponent,
+    LoginComponent,
+    ForbiddenComponent,
   ],
   imports: [
     BrowserModule,
